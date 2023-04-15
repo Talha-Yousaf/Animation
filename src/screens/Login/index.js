@@ -18,6 +18,7 @@ export default function Dashboard(props) {
  //dckdlk
  ///dfjkhdfhdi
  //dshgcjsdg
+ //dknkdn
   return (
     <ScreenWrapper statusBarColor={AppColors.white} barStyle='dark-content'>
       <View style={styles.mainViewContainer}>
