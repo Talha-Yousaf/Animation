@@ -19,7 +19,7 @@ export default function Dashboard(props) {
     <ScreenWrapper statusBarColor={AppColors.white} barStyle='dark-content'>
       <View style={styles.mainViewContainer}>
         <Text> Login</Text>
-
+      <Text>Here</Text>
       </View>
     </ScreenWrapper>
   );
