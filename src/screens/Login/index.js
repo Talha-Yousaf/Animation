@@ -14,11 +14,7 @@ import AntDesign from "react-native-vector-icons/AntDesign";
 import {width} from "react-native-dimension";
 import cities from "../../utills/Data"
 export default function Dashboard(props) {
- //kladfjlkdf
- //dckdlk
- ///dfjkhdfhdi
- //dshgcjsdg
- //dknkdn dfdsfs
+ 
   return (
     <ScreenWrapper statusBarColor={AppColors.white} barStyle='dark-content'>
       <View style={styles.mainViewContainer}>
