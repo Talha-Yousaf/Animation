@@ -20,6 +20,7 @@ export default function Dashboard(props) {
       <View style={styles.mainViewContainer}>
         <Text> Login</Text>
       <Text>Here</Text>
+      <View></View>
       </View>
     </ScreenWrapper>
   );
