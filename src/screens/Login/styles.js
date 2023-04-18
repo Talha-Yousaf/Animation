@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
     flex: 1,
     aspectRatio: 1,
     marginHorizontal: 8,
+    marginHorizontal: 8,
     marginBottom: 16,
     backgroundColor: '#FFFFFF',
     borderRadius: 8,
