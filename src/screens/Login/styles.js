@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
     elevation: 2,
     overflow: 'hidden',
     alignItems: 'center',
+    alignItems: 'center',
   },
   image: {
     width: '100%',
