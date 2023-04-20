@@ -40,7 +40,7 @@ const DragButton = () => {
       },
     })
   ).current;
-
+//gyjgiugi
   return (
     <View style={styles.container}>
       <Animated.View
