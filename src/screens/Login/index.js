@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'red',
     alignSelf:"center"
     // position: 'absolute',
-    // left: width(1),
+    // left: width(1),vhvj
   },
 });
 
