@@ -18,7 +18,7 @@ export default function Dashboard(props) {
     });
     dispatch(logout());
   };
-  //dcd
+  //dcddbujdh
   return (
     <ScreenWrapper statusBarColor={AppColors.white} barStyle="dark-content">
       <View style={styles.mainViewContainer}>
