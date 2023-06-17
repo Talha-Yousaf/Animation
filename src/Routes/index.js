@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import Login from '../screens/Login';
+import Basic from '../screens/Basic';
 import Dashboard from '../screens/Dashboard';
 import {useSelector} from 'react-redux';
 import Loader from '../components/Loader'
@@ -12,11 +12,11 @@ export default function Routes() {
     <NavigationContainer>
       <Loader/>
       {!isLogin ? (
-        <Stack.Navigator initialRouteName="Login" headerMode="none">
-          <Stack.Screen name="Login" component={Login} />
+        <Stack.Navigator initialRouteName="Basic" >
+          <Stack.Screen name="Basic" component={Basic} />
         </Stack.Navigator>
       ) : (
-        <Stack.Navigator initialRouteName="Dashboard" headerMode="none">
+        <Stack.Navigator initialRouteName="Dashboard">
           <Stack.Screen name="Dashboard" component={Dashboard} />
         </Stack.Navigator>
       )}

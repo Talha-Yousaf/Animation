@@ -1,6 +1,6 @@
+import 'react-native-gesture-handler';
 import React from 'react';
 import Routes from './Routes/index';
-import 'react-native-gesture-handler';
 import {Provider} from 'react-redux';
 import store from './Redux/index';
 import FlashMessage from 'react-native-flash-message';
