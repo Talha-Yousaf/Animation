@@ -11,7 +11,7 @@ container:{
 animatedViewStyle:{
     width:width(30),
     height:width(30),
-    backgroundColor:AppColors.green
+    backgroundColor:AppColors.blue
 }
 });
 export default styles;
