@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import AppColors from '../../utills/AppColors';
+import AppColors from '../../constants/AppColors';
 import { width, height } from 'react-native-dimension';
 import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
 const styles = StyleSheet.create({

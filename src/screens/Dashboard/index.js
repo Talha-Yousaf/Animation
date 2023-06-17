@@ -5,7 +5,7 @@ import { ScreenWrapper } from 'react-native-screen-wrapper';
 import { useDispatch, useSelector } from 'react-redux';
 import Button from '../../components/Button';
 import { logout } from '../../Redux/Actions/Auth';
-import AppColors from '../../utills/AppColors';
+import AppColors from '../../constants/AppColors';
 import styles from './styles';
 export default function Dashboard(props) {
   const user = useSelector((state) => state.Auth.user);
