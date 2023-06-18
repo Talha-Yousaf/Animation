@@ -9,7 +9,7 @@ export const animationsData:Animation[] = [
     },
     {
         id:3,
-        name:"PANGESTURE"
+        name:"INTERPOLATE"
     }
 ]
 export interface Animation {

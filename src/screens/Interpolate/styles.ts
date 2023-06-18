@@ -1,14 +1,15 @@
 import { StyleSheet } from 'react-native';
 import AppColors from '../../constants/AppColors';
+import { width } from '../../constants/Dimensions';
 
 const styles = StyleSheet.create({
-  mainViewContainer: {
+  scrollView: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
-  text: {
-    color: AppColors.green
-  }
+  square:{
+    width:width(70),
+    height:width(70),
+    backgroundColor:"red"
+  },
 });
 export default styles;
