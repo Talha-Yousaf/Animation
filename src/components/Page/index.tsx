@@ -1,7 +1,7 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, ViewStyle } from 'react-native'
 import styles from './styles'
-import Animated, { AnimatedStyleProp, Extrapolate, interpolate, useAnimatedStyle } from 'react-native-reanimated'
+import Animated, { AnimatedStyleProp, Extrapolate, interpolate, useAnimatedStyle, withSpring } from 'react-native-reanimated'
 import { height, width } from '../../constants/Dimensions'
 const screenWidth:number = width(100);
 const squareSize = width(70)
@@ -10,6 +10,9 @@ interface PageProps{
     title:string,
     index:number,
     translateX:Animated.SharedValue<number>,
+}
+type TranslateStyle = {
+  translateY :number
 }
 const Page:React.FC<PageProps> = ({title,index,translateX}) => {
   const inputRange = [(index-1)*screenWidth,index*screenWidth,(index+1)*screenWidth]
@@ -31,7 +34,7 @@ const Page:React.FC<PageProps> = ({title,index,translateX}) => {
       transform: [
         {scale},
       ]
-    };
+    } as AnimatedStyleProp<ViewStyle>
   });
 
   const animatedTextStyles = useAnimatedStyle(()=>{
@@ -42,7 +45,7 @@ const Page:React.FC<PageProps> = ({title,index,translateX}) => {
       transform:[{
         translateY
       }] 
-    }
+    } as AnimatedStyleProp<ViewStyle>
   })
   return (
     <View style={[
