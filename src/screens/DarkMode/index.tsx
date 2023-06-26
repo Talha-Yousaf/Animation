@@ -13,7 +13,7 @@ type Theme = "light"|"dark"
 const InterpolateBasic:React.FC<RouterProps> = ({navigation})=> {
   const [theme,setTheme] = useState<Theme>("light")
   const progress = useDerivedValue(()=>{
-    return theme=="dark"?withTiming(1,{duration:500}):withTiming(0,{duration:500});
+    return theme=="dark"?withTiming(1,{duration:1000}):withTiming(0,{duration:1000});
   },[theme])
 
   const animatedStyles = useAnimatedStyle(()=>{
@@ -21,10 +21,23 @@ const InterpolateBasic:React.FC<RouterProps> = ({navigation})=> {
     return{
       backgroundColor
     }
-  })
-  
+  });
+  const animatedCircleStyles = useAnimatedStyle(()=>{
+    const backgroundColor = interpolateColor(progress.value,[0,1],[COLORS.light.circle,COLORS.dark.circle])
+    return{
+      backgroundColor
+    }
+  });
+  const animatedTextStyles = useAnimatedStyle(()=>{
+    const color = interpolateColor(progress.value,[0,1],[COLORS.light.text,COLORS.dark.text])
+    return{
+      color
+    }
+  });
   return (
     <Animated.View style={[styles.mainViewContainer,animatedStyles]}>
+      <Animated.Text style={[styles.text,animatedTextStyles]}>Theme</Animated.Text>
+      <Animated.View style={[styles.circle,animatedCircleStyles]}>
       <Switch 
       value={theme==="dark"}
       onValueChange={(toggled)=>{
@@ -33,6 +46,7 @@ const InterpolateBasic:React.FC<RouterProps> = ({navigation})=> {
       trackColor={SWITCHTRACKCOLOR}
       thumbColor={"violet"}
       />
+      </Animated.View>
     </Animated.View>
   );
 }
