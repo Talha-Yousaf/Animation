@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
         backgroundColor:AppColors.white,
     },
     columnWrapper:{
+        marginBottom:height(2),
     },
     menuItemContainer:{
         width:width(30),

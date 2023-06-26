@@ -21,6 +21,8 @@ const Menu: React.FC<RouterProps> = ({navigation}) => {
               break;
             case 'INTERPOLATE':
               navigation.navigate('Interpolate');
+            case "DARKMODE":
+              navigation.navigate("DarkMode")
           }
         }}
         style={styles.menuItemContainer}>

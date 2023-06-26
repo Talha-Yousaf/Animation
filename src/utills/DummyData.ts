@@ -10,6 +10,10 @@ export const animationsData:Animation[] = [
     {
         id:3,
         name:"INTERPOLATE"
+    },
+    {
+        id:4,
+        name:"DARKMODE"
     }
 ]
 export interface Animation {
