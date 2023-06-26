@@ -13,7 +13,7 @@ type Theme = "light"|"dark"
 const InterpolateBasic:React.FC<RouterProps> = ({navigation})=> {
   const [theme,setTheme] = useState<Theme>("light")
   const progress = useDerivedValue(()=>{
-    return theme=="dark"?withTiming(1):withTiming(0);
+    return theme=="dark"?withTiming(1,{duration:500}):withTiming(0,{duration:500});
   },[theme])
 
   const animatedStyles = useAnimatedStyle(()=>{
