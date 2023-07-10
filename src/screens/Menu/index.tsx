@@ -23,6 +23,8 @@ const Menu: React.FC<RouterProps> = ({navigation}) => {
               navigation.navigate('Interpolate');
             case "DARKMODE":
               navigation.navigate("DarkMode")
+            case "PinchToZoom":
+              navigation.navigate("PinchGestureHandler")
           }
         }}
         style={styles.menuItemContainer}>

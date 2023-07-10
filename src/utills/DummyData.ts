@@ -14,6 +14,10 @@ export const animationsData:Animation[] = [
     {
         id:4,
         name:"DARKMODE"
+    },
+    {
+        id:5,
+        name:"PinchToZoom"
     }
 ]
 export interface Animation {
