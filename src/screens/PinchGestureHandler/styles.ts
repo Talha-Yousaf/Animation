@@ -12,6 +12,16 @@ animatedViewStyle:{
     width:width(30),
     height:width(30),
     backgroundColor:AppColors.blue
+},
+imageStyle:{
+  flex:1,
+},
+focalPointView:{
+  ...StyleSheet.absoluteFillObject,
+  backgroundColor:AppColors.blue,
+  width:width(2),
+  height:width(2),
+  borderRadius:width(2)/2,
 }
 });
 export default styles;
