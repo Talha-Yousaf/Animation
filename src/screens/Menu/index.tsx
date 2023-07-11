@@ -21,10 +21,16 @@ const Menu: React.FC<RouterProps> = ({navigation}) => {
               break;
             case 'INTERPOLATE':
               navigation.navigate('Interpolate');
+              break;
             case "DARKMODE":
               navigation.navigate("DarkMode")
+              break;
             case "PinchToZoom":
               navigation.navigate("PinchGestureHandler")
+              break;
+            case "InstaLike":
+              navigation.navigate("DoubleTapLike")
+              break;
           }
         }}
         style={styles.menuItemContainer}>
