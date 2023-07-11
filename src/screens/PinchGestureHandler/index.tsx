@@ -10,6 +10,7 @@ const WIDTH:number = width(100);
 const HEIGHT:number  = height(100)
 const AnimatedImage = Animated.createAnimatedComponent(Image)
 
+
 const Pinch = () => {
   const scale = useSharedValue(1);
   const focalX = useSharedValue(0)
