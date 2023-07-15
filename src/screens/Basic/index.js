@@ -34,6 +34,5 @@ const Basic = () => {
       />
     </View>
   );
-  
 };
 export default Basic;
