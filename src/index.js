@@ -8,9 +8,9 @@ import {LogBox} from 'react-native';
 LogBox.ignoreAllLogs(true);
 export default function App() {
   return (
-    <Provider store={store}>
+    // <Provider store={store}>
       <Routes />
-      <FlashMessage position="bottom" icon = "auto"/>
-    </Provider>
+      // <FlashMessage position="bottom" icon = "auto"/>
+    // </Provider>
   );
 }

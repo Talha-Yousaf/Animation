@@ -31,6 +31,9 @@ const Menu: React.FC<RouterProps> = ({navigation}) => {
             case "InstaLike":
               navigation.navigate("DoubleTapLike")
               break;
+            case "LocalStorage":
+              navigation.navigate("LocalStorage")
+              break;  
           }
         }}
         style={styles.menuItemContainer}>

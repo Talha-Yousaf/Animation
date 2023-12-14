@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import Menu from "../screens/Menu";
@@ -8,6 +8,7 @@ import InterpolateBasic from '../screens/Interpolate';
 import DarkMode from "../screens/DarkMode";
 import PinchGestureHandler from "../screens/PinchGestureHandler";
 import DoubleTapLike from "../screens/DoubleTapLike";
+import LocalStorage from "../screens/LocalStorage";
 import {useSelector} from 'react-redux';
 // import Loader from '../components/Loader'
 const Stack = createStackNavigator();
@@ -22,6 +23,7 @@ export default function Routes() {
           <Stack.Screen name="DarkMode" component={DarkMode} />
           <Stack.Screen name="PinchGestureHandler" component={PinchGestureHandler} />
           <Stack.Screen name="DoubleTapLike" component={DoubleTapLike} />
+          <Stack.Screen name="LocalStorage" component={LocalStorage} />
         </Stack.Navigator>
     </NavigationContainer>
   );

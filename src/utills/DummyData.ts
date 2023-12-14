@@ -22,6 +22,10 @@ export const animationsData:Animation[] = [
     {
         id:6,
         name:"InstaLike"
+    },
+    {
+        id:7,
+        name:"LocalStorage"
     }
 ]
 export interface Animation {
